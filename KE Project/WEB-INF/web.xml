@@ -1,0 +1,15 @@
+<web-app>
+
+<servlet>
+<servlet-name>mmm</servlet-name>
+<servlet-class>mentor_mentee_meetings</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>mmm</servlet-name>
+<url-pattern>/mentor_mentee_meetings</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    PA Student - HOME
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+  <link href="./assets/css/bootstrap-select.css" rel="stylesheet" />
+  
+  
+  
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-info">
+            <div class="container">
+              <div class="navbar-translate">
+                <a class="navbar-brand" href="#0">Permission Automation - Student</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <!--<li class="active nav-item">
+                    <a href="#pablo" class="nav-link">
+                      Letters
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#pablo" class="nav-link">
+                      Status
+                    </a>
+                  </li>-->
+                  <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                      LOGOUT
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+		  
+	<div class="section section-white" id="#let">
+		<div class="container">
+			<div id="navigation-pills">
+				<!--<div class="title">
+					<h3>Letters</h3>
+				</div>-->
+			<div class="row">
+				<div class="col-lg-6 col-md-8">
+					<ul class="nav nav-pills nav-pills-icons" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" href="#permission_letter" role="tab" data-toggle="tab">
+								Permission Letter
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#gate_pass" role="tab" data-toggle="tab">
+								Gate Pass
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#status" role="tab" data-toggle="tab">
+								Status
+							</a>
+						</li>
+					</ul>
+					<form action="student_home.jsp">
+					<div class="tab-content tab-space">
+						<div class="tab-pane active" id="permission_letter">
+							<div id="inputs">
+								<label for="department">Department</label>
+									<div class="col-lg-6 col-md-8">
+										<select class="selectpicker" name="pl_dept">
+											<option value="IT">IT</option>
+											<option value="CSE">CSE</option>
+											<option value="ECE">ECE</option>
+											<option value="MEC">MEC</option>
+										</select>	
+									</div>
+								
+								<br/>
+								
+								<div class="form-group">
+									<label class="label-control">Date</label>
+									<input type="text" class="form-control datetimepicker" name="pl_date">
+								</div>
+								
+								<div class="form-group">
+									<label for="exampleInput1" class="bmd-label-floating">Subject</label>
+									<input type="text" class="form-control" id="exampleInput1" name="pl_subject">
+									<span class="bmd-help">Subject appears as Title for your letter.</span>
+								</div>
+								<div class="form-group">
+									<label for="exampleInput1" class="bmd-label-floating">Reason</label>
+									<input type="text" class="form-control" id="exampleInput1" name="pl_reason">
+								</div>
+								<button type="submit" class="btn btn-rose btn-round" value="pl_submit" name="pl_submit">Letter  Submit</button>
+							</div>
+						</div>
+						
+						
+						<div class="tab-pane" id="gate_pass">
+							<div id="inputs">
+							<label for="department">Department</label>
+									<div class="col-lg-6 col-md-8">
+										<select class="selectpicker"  name="gp_dept" >
+											<option value="IT">IT</option>
+											<option value="CSE">CSE</option>
+											<option value="ECE">ECE</option>
+											<option value="MEC">MEC</option>
+										</select>	
+									</div>
+									<br/>
+								<div class="form-group">
+									<label class="label-control">Date</label>
+									<input type="text" class="form-control datetimepicker" name="gp_date" >
+								</div>
+								
+								<div class="form-group">
+									<label for="exampleInput1" class="bmd-label-floating">Subject</label>
+									<input type="text" class="form-control" id="exampleInput1" name="gp_subject">
+									<span class="bmd-help">Subject appears as Title for your letter.</span>
+								</div>
+								
+								<div class="form-group">
+									<label for="exampleInput1" class="bmd-label-floating">Reason</label>
+									<input type="text" class="form-control" id="exampleInput1" name="gp_reason">
+								</div>
+								<button type="submit" class="btn btn-rose btn-round" value="gp_submit" name="gp_submit">Gate-Pass  Submit</button>
+							</div>
+						</div>
+						<div class="tab-pane" id="status">
+							<div class="row">
+								<span>
+								<div>
+									<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+								</div>
+								</span>
+								<iframe class="embed-responsive-item" src="status.jsp" frameborder="0" allowfullscreen width="100%" scrolling="yes">                          
+								</iframe>
+							</div>	
+						</div>
+					</div>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+    </div>
+
+    
+	<!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--	Plugin for Sharrre btn -->
+  <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+  <script src="./assets/js/bootstrap-select.js" type="text/javascript"></script>
+  <script>
+	
+	
+    $(document).ready(function() {
+      //init DateTimePickers
+      materialKit.initFormExtendedDatetimepickers();
+
+      // Sliders Init
+      materialKit.initSliders();
+    });
+
+
+    function scrollToDownload() {
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+
+
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

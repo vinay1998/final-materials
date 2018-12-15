@@ -1,0 +1,8 @@
+1)create repository
+2)copy url from "clone or download"
+3)to clone "git clone url"
+4)to add "git add ."
+5)to commit "   git commit -m "message"     "  
+6)to push "git push"
+7)to pull "git pull"
+8)to known status "git status"

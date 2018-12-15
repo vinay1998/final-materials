@@ -1,0 +1,4 @@
+step 1) read values from html file
+step 2) database connection
+step 3) read or insert values into database
+step 4) close connection
